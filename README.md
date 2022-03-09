@@ -1,5 +1,8 @@
 # Python Continuous Integration example
-This is a sample python app that performs basic CI workflow based on GitHub actions.
+![Continuous integration](https://github.com/faildeny/python_continuous_integration/actions/workflows/python-ci.yml/badge.svg)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
+This is a sample python app that performs basic CI workflow based on GitHub Actions.
 
  This GitHub Action workflow will
 
@@ -34,7 +37,7 @@ line length adjusted to Black formatting standards
 ### Pytest testing
 `pytest`
 
-## Commit, format and push in GitHub Action:
+## Commit and push in GitHub Action:
 ```
 formatting:
     outputs:
@@ -94,3 +97,12 @@ build:
         ref: ${{ needs.formatting.outputs.new_sha }}
         fetch-depth: 0
 ```
+
+## Status Badges
+Continuous integration
+
+```![Build](https://github.com/user_name/repository_name/actions/workflows/python-ci.yml/badge.svg)```
+
+Black formatting
+
+```[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)```
