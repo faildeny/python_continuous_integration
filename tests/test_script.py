@@ -1,4 +1,5 @@
 import numpy as np
+
 from sample_app.script import non_zero
 
 
