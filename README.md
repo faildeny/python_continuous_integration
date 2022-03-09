@@ -13,6 +13,9 @@ This is a sample python app that performs basic CI workflow based on GitHub Acti
  - Check code with flake8 linter
  - Run tests with pytest
 
+See this repository's
+ [Actions](https://github.com/faildeny/python_continuous_integration/actions/workflows/python-ci.yml)
+
 ## Commiting changes during GitHub Action
 ### Why?
 This step involved much more work and that's mostly why this repo was created. Code formatting may be approached in different ways for example (pre commit git hook). But in some situations it may be more convenient to reformat code independent of the commiters setup. 
@@ -99,10 +102,11 @@ build:
 ```
 
 ## Status Badges
-- Continuous integration
+- Continuous integration ![Continuous integration](https://github.com/faildeny/python_continuous_integration/actions/workflows/python-ci.yml/badge.svg)
+
 
     ```![Continuous integration](https://github.com/user_name/repository_name/actions/workflows/python-ci.yml/badge.svg)```
 
-- Black formatting
+- Black formatting [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
     ```[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)```
